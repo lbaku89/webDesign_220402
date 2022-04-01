@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/index.css">
+  <script src="./jquery/jquery_ver1.8.js"></script>
+</head>
+<body>
+  <div id="popupBg" class="d-none"></div>
+  <div class="p-rel">
+    <header id="hd w-100 h-100px">
+      <div class="p-rel container w-1200px m-auto d-flex h-100px justify-between align-center">
+        <div class="w-1200px p-abs" id="navbg"></div>
+        <h1><a href="#"><img src="./img/logo/logo.png" alt="logo"></a></h1>
+        <nav>
+          <ul class="d1ul d-flex text-center">
+            <li class="d1li p-rel">
+              <a href="#">재단소개</a>
+              <ul class="d2ul p-abs">
+                <li class="d2li"><a href="#none">설립취지</a></li>
+                <li class="d2li"><a href="#none">연혁</a></li>
+                <li class="d2li"><a href="#none">찾아오시는길</a></li>
+              </ul>
+            </li>
+            <li class="d1li p-rel">
+              <a href="#">후원하기</a>
+              <ul class="d2ul p-abs">
+                <li class="d2li"><a href="#none">국내후원</a></li>
+                <li class="d2li"><a href="#none">국외후원</a></li>
+                <li class="d2li"><a href="#none">맞춤후원</a></li>
+              </ul>
+            </li>
+            <li class="d1li p-rel">
+              <a href="#">자료실</a>
+              <ul class="d2ul p-abs">
+                <li class="d2li"><a href="#none">서식자료실</a></li>
+                <li class="d2li"><a href="#none">사진자료실</a></li>
+                <li class="d2li"><a href="#none">후원양식</a></li>
+              </ul>
+            </li>
+            <li class="d1li p-rel">
+              <a href="#">스토리</a>
+              <ul class="d2ul p-abs">
+                <li class="d2li"><a href="#none">웹진</a></li>
+                <li class="d2li"><a href="#none">보고서</a></li>
+                <li class="d2li"><a href="#none">나의 후원</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="h-300px w-1200px m-auto over-hidden">
+      <ul class="d-flex imgUl">
+        <li class="imgLi"><img src="./img/main-img/banner1.jpg" alt="#"></li>
+        <li class="imgLi"><img src="./img/main-img/banner2.jpg" alt="#"></li>
+        <li class="imgLi"><img src="./img/main-img/banner3.jpg" alt="#"></li>
+      </ul>
+    </div>
+    <div id="contentBox" class="m-auto w-1200px d-flex">
+      <div class="noticeBox w-400px h-200px">
+        <h3><a href="#">공지사항</a></h3>
+        <ul>
+          <li id="popupli"><a href="#none">공지사항내용공지사항내용공지사항내용공지사항내용</a><span>공지사항 날짜</span></li>
+          <li><a href="#none">공지사항내용공지사항내용공지사항내용공지사항내용</a><span>공지사항 날짜</span></li>
+          <li><a href="#none">공지사항내용공지사항내용공지사항내용공지사항내용</a><span>공지사항 날짜</span></li>
+          <li><a href="#none">공지사항내용공지사항내용공지사항내용공지사항내용</a><span>공지사항 날짜</span></li>
+        </ul>
+      </div>
+      <div class="galleryBox w-400px h-200px">
+        <h3 class=".mb-10px"><a href="#">갤러리</a></h3>
+        <ul class="d-flex .mt-10px">
+          <li class="me-10px"><a href="#"><img src="./img/gallery-img/gallery1.jpg" alt=""></a></li>
+          <li class="me-10px"><a href="#"><img src="./img/gallery-img/gallery2.jpg" alt=""></a></li>
+          <li><a href="#"><img src="./img/gallery-img/gallery3.jpg" alt=""></a></li>
+        </ul>
+      </div>
+      <div class="bannerBox w-400px h-200px p-rel">
+        <h3 class="p-abs"><a href="#">배너</a></h3>
+        <ul>
+          <li><a href="#"><img src="./img/gallery-img/gallery1.jpg" alt=""></a></li>
+        </ul>
+      </div>
+
+    </div>
+    <footer class="d-flex w-1200px h-100px m-auto align-center justify-between">
+      <h2><a href="#"><img src="./img/logo/logo.png" alt="logo"></a></h2>
+      <p class="copyright">copyright All rights reserved 그린복지재단</p>
+      <div>
+        <select>
+          <option>패밀리사이트</option>
+          <option>네이버</option>
+          <option>다음</option>
+          <option>티스토리</option>
+        </select>
+      </div>
+    </footer>
+
+    <div id="popupBox" class="p-abs d-none">
+      <h2>A-2 그린복지재단 팝업 제목</h2>
+      <div>여기에 팝업 내용을 작성합니다.</div>
+      <button>닫기</button>
+    </div>
+  </div>
+ 
+  <script src="./js/index.js"></script>
+</body>
+</html>

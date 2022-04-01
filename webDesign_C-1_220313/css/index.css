@@ -1,0 +1,42 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* 공통 calss */
+a{display: block; text-decoration: none;}
+.w-1000px{width: 1000px;}
+.h-650px{height: 650px;}
+.w-200px{width: 200px;}
+.text-center{text-align: center;}
+.m-auto{margin: 0 auto;}
+.h-350px {height: 350px;}
+.w-800px {width: 800px;}
+.d-flex{display: flex;}
+.p-rel{position: relative;}
+.p-abs{position: absolute;}
+/* 태그별 css */
+.hd-container{background-color: rgb(208, 222, 250);}
+.hd-logo{display: block;}
+.hd-container>h1>a{padding: 40px 0 40px 0;}
+
+ul.d1ul{width: 180px;}
+
+li.d1li{border-top: 1px solid blue;}
+li.d1li:nth-child(4){border-bottom: 1px solid blue;}
+li.d1li>a{font-size: 18px; font-weight: bold; background-color: white; 
+color: black; padding: 10px;}
+li.d1li:hover>a{ background-color: blue; 
+  color: white;}
+
+li.d2li>a{ background-color:white; color: black; padding: 10px;}
+li.d2li>a:hover{ background-color:rgb(208, 222, 250);
+    color: white;}
+
+ul.d2ul{display:none;}
+
+/* fade in out part */
+
+#imgUl>li {visibility: hidden; top:0; left:0; transition:1s; 
+          width: 100%; height: 100%; opacity: 0;}
+#imgUl>li.show{visibility: visible; opacity: 1;}

@@ -1,0 +1,94 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+a{text-decoration:none; display: block; color: black;}
+
+/* 공통calss */
+.me-10px{margin-right: 10px;}
+.mb-10px{margin-bottom: 10px;}
+.mt-10px{margin-top: 10px;}
+.p-3{padding: 3rem;}
+.w-400px{width: 400px;}
+.h-200px{height: 200px;}
+.w-100{ width: 100%; }
+.w-1200px{width: 1200px;}
+.m-auto{ margin: 0 auto;}
+.h-100px{ height: 100px;}
+.d-flex{ display: flex; }
+.d-none{display: none;}
+.justify-center{justify-content: center;}
+.justify-between{justify-content: space-between;}
+.d-block{display: block;}
+.align-center{ align-items: center;}
+.bg-red{background-color: red;}
+.p-rel{position: relative;}
+.p-abs{position: absolute;}
+.text-center{text-align: center;}
+.over-hidden{overflow: hidden;}
+
+/* 상단네비 */
+nav{margin: auto 0 0 auto;}
+nav a{padding:10px;}
+nav li{height: 44px;}
+ul.d1ul{width: 600px;}
+ul.d1ul>li{width: 25%;}
+
+ul.d1ul>li>a{font-size: 18px; color: black; font-weight: bold;}
+ul.d1ul>li:hover>a{ background-color: greenyellow; color:white;}
+.d2ul{width: 100%; z-index: 2; display: none;}
+.d2li>a{text-align: center; margin: auto; font-weight: 500; color: white;}
+.d2li>a:hover{background-color: white; color: black;}
+#navbg{top:100px; height: 132px; background-color: green; z-index: 1; 
+       display: none;}
+/* slide부분 */
+.imgUl{ width: 5000px;}
+
+/* contents부분 */
+#contentBox{padding: 10px;}
+#contentBox h3{margin-bottom: 10px;}
+.noticeBox ul li { display: flex; line-height: 2;}
+.noticeBox ul li:hover { background-color: greenyellow;}
+.noticeBox ul li a{ color:black; width: 250px; white-space: nowrap; overflow: hidden;
+text-overflow: ellipsis; display: inline-block;}
+
+
+/* popupBox */
+#popupBox{
+  background-color: white;
+  left: 50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+  z-index: 10000;
+  padding: 10px;
+  border: 1px black solid;
+  text-align: center;
+  z-index: 1000;
+}
+#popupBox>h2{padding: 10px;}
+#popupBox>div{padding:10px;}
+#popupBox>button{float: right;}
+#popupBg{ width: 100%; height: 100%; 
+background-color: gray; opacity: 0.5;
+z-index: 998; position:fixed;}
+
+/* gallerybox */
+.bannerBox img{
+width: 400px;
+height: 200px;
+}
+.bannerBox h3{
+  width: 100px; height: auto;
+  text-align: center;
+  left: 50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+  z-index: 50;
+  background-color: white;
+  }
+  /* footer */
+
+  

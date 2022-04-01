@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>대한투어</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./source/jquery/jquery-1.12.3.js"></script>
+  <script src="./js/index.js"></script>
+</head>
+<body>
+  <!-- modalpopup -->
+  <div class="modalbg p-abs w-100 h-100">
+  </div>
+  <div class="wrap p-rel">
+    <!-- header -->
+    <header class="w-100 h-100px">
+      <div class="h-container w-1200px h-100px m-auto d-flex align-center">
+        <h1><a href="#none"><img src="./source/Header/logo.png" alt="헤더로고"></a></h1>
+        <nav>
+          <ul class="d1ul d-flex p-rel">
+            <li class="d1li">
+              <a href="#none">해외여행</a>
+              <ul class="d2ul">
+                <li class="d2li"><a href="#none">남아/대만</a></li>
+                <li class="d2li"><a href="#none">중국/홍콩</a></li>
+                <li class="d2li"><a href="#none">유럽/두바이</a></li>
+                <li class="d2li"><a href="#none">미주/하와이</a></li>
+              </ul>
+            </li>
+            <li class="d1li">
+              <a href="#none">국내여행</a>
+              <ul class="d2ul">
+                <li class="d2li"><a href="#none">서울/경기권</a></li>
+                <li class="d2li"><a href="#none">충청권</a></li>
+                <li class="d2li"><a href="#none">전라권</a></li>
+                <li class="d2li"><a href="#none">경상/강원권</a></li>
+              </ul>
+            </li>
+            <li class="d1li">
+              <a href="#none">제주도</a>
+              <ul class="d2ul">
+                <li class="d2li"><a href="#none">버스여행</a></li>
+                <li class="d2li"><a href="#none">자유여행</a></li>
+                <li class="d2li"><a href="#none">호텔/펜션</a></li>
+              </ul>
+            </li>
+            <li class="d1li">
+              <a href="#none">렌터카</a>
+              <ul class="d2ul">
+                <li class="d2li"><a href="#none">국내 렌터카</a></li>
+                <li class="d2li"><a href="#none">국외 렌터카</a></li>
+  
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- img slide -->
+    <div class="h-300px m-auto w-1200px slidediv">
+      <ul class="slideul">
+        <li class="slideli"><a href="#none"><img src="./source/slide/img1.jpg" alt="배너1"></a></li>
+        <li class="slideli"><a href="#none"><img src="./source/slide/img2.jpg" alt="배너2"></a></li>
+        <li class="slideli"><a href="#none"><img src="./source/slide/img3.jpg" alt="배너3"></a></li>
+      </ul>
+    </div>
+    <!-- contents -->
+    <div class="w-1200px m-auto h-200px d-flex">
+      <!-- c1box -->
+      <div class="c1box w-400px h-200px">
+        <h3 class="">공지사항</h3>
+        <ul class="c1ul">
+          <li class="c1li modaltrigger"><a href="#none">대한투어 공지사항1</a><span>2020.11.24</span></li>
+          <li class="c1li"><a href="#none">대한투어 공지사항2</a><span>2020.11.24</span></li>
+          <li class="c1li"><a href="#none">대한투어 공지사항3</a><span>2020.11.24</span></li>
+          <li class="c1li"><a href="#none">대한투어 공지사항4</a><span>2020.11.24</span></li>
+        </ul>
+      </div>
+      <!-- c2box -->
+      <div class="c2box w-400px h-200px">
+        <h3 class="">갤러리</h3>
+        <ul class="c2ul d-flex justify-between">
+          <li class="c2li"><a href="#none"><img src="./source/Contents/gallery/icon1.jpg" alt="갤러리사진1"></a></li>
+          <li class="c2li"><a href="#none"><img src="./source/Contents/gallery/icon2.jpg" alt="갤러리사진2"></a></li>
+          <li class="c2li"><a href="#none"><img src="./source/Contents/gallery/icon3.jpg" alt="갤러리사진3"></a></li>
+        </ul>
+      </div>
+      <!-- c3box -->
+      <div class="c3box w-400px h-200px p-rel">
+        <h3 class="p-abs"><a href="#none">바로가기</a></h3>
+        <div>
+          <a href="#none">
+            <img src="./source/Contents/direct/direct.jpg" alt="바로가기이미지" class="c3img">
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer class="w-100 h-100px">
+      <div class="w-1200px h-100px m-auto d-flex align-center justify-between">
+        <p class="fp w-1000px h-100px">COPYRIGHTⓒ by WEBDESIGN. ALL RIGHTS RESERVED</p>
+        <div class="f-rbox w-200px h-100px">
+          <ul class="ful h-50 d-flex justify-between align-center">
+            <li><a href="#none"><img src="./source/Footer/sns1.jpg" alt="페이스북"></a></li>
+            <li><a href="#none"><img src="./source/Footer/sns2.jpg" alt="트위터"></a></li>
+            <li><a href="#none"><img src="./source/Footer/sns3.jpg" alt="인스타그램"></a></li>
+          </ul>
+          <div class="h-50 w-100">
+            <select name="family" id="familySite">
+              <option>패밀리사이트1</option>
+              <option>패밀리사이트2</option>
+              <option>패밀리사이트3</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- popup -->
+    <div class="popupbox p-abs">
+      <h3>대한투어 공지사항</h3>
+      <p>동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라만세.
+        무궁화 삼천리 화려강 대한 사람 대한으로 길이 보전하세.
+        남산 위에 저 소나무, 철갑을 두른 듯 바람서리 불변함은 우리 기상일세.</p>
+      <button>X닫기</button>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,196 @@
+@charset "utf-8";
+
+*{margin: 0; padding: 0;
+list-style: none; text-decoration: none;
+color: #333333; box-sizing: border-box;}
+
+a{display: block;}
+
+:root{
+  --color-c1: #396ee7;
+  --color-c2: #789ae9;
+}
+
+/* 공통클래스 */
+
+.black{color: black;}
+.white{color: white;}
+
+.w-100{width: 100%;}
+.w-50{width: 50%;}
+.w-10{width: 10%;}
+
+.h-100{height: 100%;}
+.h-50{height: 50%;}
+.h-10{height: 10%;}
+
+
+.w-1200px{width: 1200px;}
+.w-1000px{width: 1000px;}
+.w-600px{width: 600px;}
+.w-400px{width: 400px;}
+.w-200px{width: 200px;}
+
+
+.h-300px{height: 300px;}
+.h-200px{height: 200px;}
+.h-150px{height: 150px;}
+.h-100px{height: 100px;}
+.h-50{height:50px;}
+
+.m-auto{margin: 0 auto;}
+
+.p-rel{position: relative;}
+.p-abs{position: absolute;}
+
+.d-flex{display: flex;}
+
+.align-center{align-items: center;}
+.justify-between{justify-content: space-between;}
+
+.text-center{text-align: center;}
+
+/*navi */
+header{background-color: var(--color-c1);}
+nav{width: 1000px; height: 100px;}
+
+.d1ul{ width: 600px; text-align: center;
+ margin-top:50px; height: 50px;
+margin-left:350px;}
+.d1li{width: 25%; height: 50px;}
+
+.d1li>a{width: 100%; height: 50px;
+font-size: 20px; line-height: 50px;
+font-weight: bold; color: white;}
+
+.d1li:hover>a{
+  background-color: white;
+  color: black;
+}
+
+.d2ul{position: absolute;
+text-align: center; width: 150px;
+height: 0px; z-index: 1000;
+overflow: hidden; transition: 1s;}
+
+.d1ul::after{
+  content:"";
+  position: absolute;
+  top: 50px;
+  left: -550px;
+  width: 1200px;
+  height: 0px;
+  background-color: var(--color-c2);
+  z-index: 999;
+  overflow: hidden;
+  transition: 1s;
+}
+.d1ul:hover::after{
+  height: 200px;
+}
+.d1ul:hover .d2ul{
+  height: 200px;
+}
+
+
+.d2ul>li{height: 50px; width: 150px;}
+.d2ul>li>a{width: 100%; height: 100%;
+line-height: 50px; font-weight: 800;}
+.d2ul>li:hover>a{
+  background-color: white;
+  color: var(--color-c1);
+}
+
+/* slide */
+.slidediv{overflow: hidden;}
+.slideul{
+  height: 5000px;
+}
+
+/* c1box */
+.c1box>h3{ display: inline-block;
+  height: 50px;
+  color: white;
+background-color: var(--color-c2);
+border-top: 1px solid white;
+line-height: 50px; padding-left: 10px;
+padding-right:10px}
+.c1ul{width: 400px; height: 150px;
+background-color: gray; box-sizing: border-box;
+border: solid 1px white;}
+
+.c1li{ display: flex; height: 25%;
+  line-height: 37px;
+  font-weight: 600;
+
+justify-content: space-between;
+padding-left: 10px; padding-right: 10px;}
+.c1li>a{ overflow: hidden;
+  font-size: 16px;
+white-space: nowrap; text-overflow: ellipsis;}
+.c1li>span{font-size: 16px;}
+
+.c1li:hover{background-color: var(--color-c2);}
+/* c2box */
+
+.c2box>h3{ display: inline-block;
+  height: 50px;
+  color: white;
+background-color: var(--color-c2);
+border-top: 1px solid white;
+line-height: 50px; padding-left: 10px;
+padding-right:10px}
+
+.c2ul{width: 400px; height: 150px;
+  background-color: gray; 
+  box-sizing: border-box;
+  border: solid 1px white;
+align-items: center;
+padding-left: 20px; padding-right: 20px;}
+
+.c2ul img{width: 80px; opacity: 0.8;}
+.c2ul li:hover img{ opacity: 1;}
+/* c3box */
+
+.c3box>h3{left: 50%; top:50%;
+transform: translate(-50%,-50%);
+border: 3px solid black;
+padding-left: 20px; padding-right: 20px;
+padding-top: 10px; padding-bottom: 10px;}
+.c3img{width: 400px;}
+
+/* footer */
+footer{background-color: var(--color-c1);}
+footer img{width: 40px;}
+.fp{line-height: 100px; text-align: center;
+color: white;}
+
+select{display: block; height: 25px;
+margin:12.5px auto 12.5px auto;}
+
+/* modal */
+.modalbg{
+  background-color: black;
+  opacity: 0.7;
+  visibility: hidden;
+  z-index: 999;
+}
+.modalbg.show{
+  visibility: visible;
+}
+
+.popupbox{
+   top:50%; left: 50%;
+   transform: translate(-50%,-50%);
+   background-color: white;
+   padding: 20px;
+   border: 2px solid gray;
+   z-index: 1000;
+   visibility: hidden;
+}
+.popupbox.show{
+  visibility: visible;
+}
+.popupbox>h3{padding-bottom: 20px; text-align: center;}
+.popupbox>p{padding-bottom: 10px; width: 600px;}
+.popupbox>button{float: right;}
